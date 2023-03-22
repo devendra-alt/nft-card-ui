@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+body {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Outfit", sans-serif;
+  background-color: #14253d;
+  color: #fff;
+}
+.nft-card {
+  background-color: #2f415b;
+  width: 320px;
+  margin: 45px auto;
+  padding: 24px 24px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+figure {
+  position: relative;
+}
+.nft-card img {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  border-radius: 4%;
+  max-width: 100%;
+  max-height: 100%;
+  backface-visibility: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #00fff7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+figure:hover {
+  opacity: 0.7;
+}
+figure:hover .overlay {
+  opacity: 0.6;
+}
+.main-heading {
+  font-size: 20px;
+  align-self: flex-start;
+}
+.price-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #00fff7;
+}
+.time-line {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #8bacda;
+}
+.article-text {
+  color: #8bacda;
+  font-weight: 500;
+}
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+  font-size: 14px;
+}
+.author span {
+  color: #8bacda;
+}
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
